@@ -1,12 +1,12 @@
-import { IsDateString, IsEmail, IsString } from 'class-validator';
+import { IsDateString, IsEmail, IsString } from "class-validator";
 
 export class CreateDeveloperDto {
-  @IsString()
-  name: string;
+	@IsString()
+	name: string;
 
-  @IsEmail()
-  email: string;
+	@IsEmail()
+	email: string;
 
-  @IsDateString()
-  dateOfBirth: string;
+	@IsDateString()
+	dateOfBirth: string;
 }
